@@ -19,7 +19,7 @@ h1 {
   flex-wrap: wrap;
   width: 900px;
   height: 900px;
-  backgroud: pink;
+  background: peachpuff;
   padding: 10px;
   border: 1px solid black;
   margin: 10px auto;
@@ -30,5 +30,5 @@ h1 {
   width: 6.25%;
   height: 6.25%;
   border: 1px solid black;
-  backgroud: dodgerblue;
+  background: dodgerblue;
 }
