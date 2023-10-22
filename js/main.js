@@ -33,9 +33,13 @@ function createNewGrid(squaresPerSide) {
 
     // Cloning square in order to be able to reiterate with for {}: without clonation it would stop at second iteration (.appendChild() removes the contenttent of the appended node)
     let clonedSquare = square;
-
+    let lightness = 100;
     clonedSquare.addEventListener('mouseover', (event) => {
-      event.currentTarget.style.background = "black";
+      if (lightness > 0) {
+        lightness = lightness - 10;
+        alert(lightness);
+        event.currentTarget.style.background = "hsl(0, 0%, " + lightness + "%)";
+      }
     });
 
     gridContainer.appendChild(clonedSquare);
