@@ -37,7 +37,6 @@ function createNewGrid(squaresPerSide) {
     clonedSquare.addEventListener('mouseover', (event) => {
       if (lightness > 0) {
         lightness = lightness - 10;
-        alert(lightness);
         event.currentTarget.style.background = "hsl(0, 0%, " + lightness + "%)";
       }
     });
